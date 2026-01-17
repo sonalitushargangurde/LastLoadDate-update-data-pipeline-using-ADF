@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "sonaliazuredatafactory"
+		},
+		"ls_destination_connectionString": {
+			"value": ""
+		},
+		"ls_dummy_connectionString": {
+			"value": ""
+		},
+		"ls_lastloaddate_connectionString": {
+			"value": ""
+		},
+		"ls_lastloaddate_sqldb_password": {
+			"value": ""
+		},
+		"ls_sql_db_password": {
+			"value": ""
+		},
+		"ls_lastloaddate_sqldb_properties_typeProperties_server": {
+			"value": "azuresqluser.database.windows.net"
+		},
+		"ls_lastloaddate_sqldb_properties_typeProperties_database": {
+			"value": "db01"
+		},
+		"ls_lastloaddate_sqldb_properties_typeProperties_userName": {
+			"value": "azuresqluser"
+		},
+		"ls_sql_db_properties_typeProperties_server": {
+			"value": "azuresqluser.database.windows.net"
+		},
+		"ls_sql_db_properties_typeProperties_database": {
+			"value": "db01"
+		},
+		"ls_sql_db_properties_typeProperties_userName": {
+			"value": "azuresqluser"
+		}
+	}
+}
