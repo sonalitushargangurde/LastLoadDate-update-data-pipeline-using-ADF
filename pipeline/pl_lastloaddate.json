@@ -5,8 +5,6 @@
 			{
 				"name": "MaxLoadDate",
 				"type": "Lookup",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -63,8 +61,6 @@
 			{
 				"name": "Copy data1",
 				"type": "Copy",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "MaxLoadDate",
@@ -131,7 +127,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"p_filename": {
-								"value": "@concat(substring(activity('MaxLoadDate').output.firstRow.MaxLoadDate,0,10),'.csv')",
+								"value": "@concat(substring(activity('MaxLoadDate').output.firstRow.MaxLoadDate,0,10),'.csv');",
 								"type": "Expression"
 							}
 						}
@@ -141,8 +137,6 @@
 			{
 				"name": "Copy data2",
 				"type": "Copy",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Copy data1",
@@ -183,8 +177,7 @@
 					"sink": {
 						"type": "JsonSink",
 						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings",
-							"copyBehavior": "PreserveHierarchy"
+							"type": "AzureBlobStorageWriteSettings"
 						},
 						"formatSettings": {
 							"type": "JsonWriteSettings"
