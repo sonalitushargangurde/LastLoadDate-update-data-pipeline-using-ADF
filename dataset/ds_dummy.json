@@ -1,0 +1,20 @@
+{
+	"name": "ds_dummy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_dummy",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "dummy.json",
+				"container": "dummy"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

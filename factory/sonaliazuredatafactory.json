@@ -1,0 +1,9 @@
+{
+	"name": "sonaliazuredatafactory",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e39edd2a-14dc-497f-b139-0153e3c2d5bd",
+		"tenantId": "8b436efc-61e1-4899-ae8d-627c119005a0"
+	}
+}
