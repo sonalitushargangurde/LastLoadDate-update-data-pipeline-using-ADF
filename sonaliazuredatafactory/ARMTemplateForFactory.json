@@ -149,7 +149,7 @@
 							"source": {
 								"type": "AzureSqlSource",
 								"sqlReaderQuery": {
-									"value": "select * from FactBookings where booking_date > '@{activity('LastLoadDate').output.firstRow.LastLoadDate}' and booking_date <= '@{activity('MaxLoadDate').output.firstRow.MaxLoadDate}';",
+									"value": "@concat(\n'SELECT * FROM FactBookings WHERE booking_date > ''',\nactivity('LastLoadDate').output.firstRow.LastLoadDate,\n''' AND booking_date <= ''',\nactivity('MaxLoadDate').output.firstRow.MaxLoadDate,\n''''\n)\n",
 									"type": "Expression"
 								},
 								"queryTimeout": "02:00:00",
