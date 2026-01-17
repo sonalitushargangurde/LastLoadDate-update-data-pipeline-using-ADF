@@ -190,7 +190,7 @@
 								"type": "DatasetReference",
 								"parameters": {
 									"p_filename": {
-										"value": "@concat(substring(activity('MaxLoadDate').output.firstRow.MaxLoadDate,0,10),'.csv');",
+										"value": "@concat(substring(activity('MaxLoadDate').output.firstRow.MaxLoadDate,0,10),'.csv')",
 										"type": "Expression"
 									}
 								}
