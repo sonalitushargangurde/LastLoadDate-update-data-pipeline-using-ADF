@@ -11,10 +11,17 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "lastloaddate.json",
-				"container": "lastloaddate"
+				"container": "lastuploaddate"
 			}
 		},
-		"schema": {}
+		"schema": {
+			"type": "object",
+			"properties": {
+				"'LastLoadDate": {
+					"type": "string"
+				}
+			}
+		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

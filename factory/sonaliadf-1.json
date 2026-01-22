@@ -1,0 +1,9 @@
+{
+	"name": "sonaliadf-1",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3eeec3e8-b06d-4af3-b085-7cf3f4e42799",
+		"tenantId": "8b436efc-61e1-4899-ae8d-627c119005a0"
+	}
+}
